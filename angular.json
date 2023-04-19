@@ -3,13 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-rxjs-google-api": {
+    "buscante": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -17,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-rxjs-google-api",
+            "outputPath": "dist/buscante",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-rxjs-google-api:build:production"
+              "browserTarget": "buscante:build:production"
             },
             "development": {
-              "browserTarget": "angular-rxjs-google-api:build:development"
+              "browserTarget": "buscante:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-rxjs-google-api:build"
+            "browserTarget": "buscante:build"
           }
         },
         "test": {
@@ -102,5 +98,7 @@
       }
     }
   },
-  "defaultProject": "angular-rxjs-google-api"
+  "cli": {
+    "analytics": "9165173c-3c95-48c7-8372-7f3406f44e49"
+  }
 }
